@@ -26,10 +26,10 @@ public class Dinamico : MonoBehaviour, ITrackableEventHandler
     void Start()
     {
 
-        actions.Add("fuego", 0);
-        actions.Add("agua", 1);
-        actions.Add("tierra", 2);
-        actions.Add("viento", 3);
+        actions.Add("fire", 0);
+        actions.Add("water", 1);
+        actions.Add("earth", 2);
+        actions.Add("wind", 3);
         userPowers[actualPowerIndex].active = true;
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
